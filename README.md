@@ -76,8 +76,15 @@ If you want to use this code for your research, please cite our work ([Paper Nam
 
 ## Necessary repositories
 
+
+The packages have been developed for ROS2 Humble (https://docs.ros.org/en/humble/Installation.html), using the associated NAV2 package (https://docs.nav2.org/getting_started/index.html)
+
+Required external packages:
+
 people: https://github.com/wg-perception/people.git (ros2 branch)
+
 RVO2 (for the orca, it should automatically install given the  fetch command): https://github.com/snape/RVO2.git
+
 LightSFM: https://github.com/robotics-upo/lightsfm.
 
 
