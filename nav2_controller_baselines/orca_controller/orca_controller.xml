@@ -1,0 +1,7 @@
+<class_libraries>
+  <library path="orca_controller">
+    <class type="orca_controller::ORCAController" base_class_type="nav2_core::Controller">
+      <description>ORCA Controller for Nav2</description>
+    </class>
+  </library>
+</class_libraries>

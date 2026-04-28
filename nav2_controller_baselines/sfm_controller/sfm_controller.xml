@@ -1,0 +1,7 @@
+<class_libraries>
+  <library path="sfm_controller">
+    <class type="sfm_controller::SFMController" base_class_type="nav2_core::Controller">
+      <description>SFM Controller for Nav2</description>
+    </class>
+  </library>
+</class_libraries>
