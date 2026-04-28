@@ -4,6 +4,7 @@
   <name>mppi_social_critics</name>
   <version>0.0.0</version>
   <description>MPPI critic for social behavior</description>
+  <maintainer email="anonymous@example.com">Anonymous</maintainer>
   <license>GNU General Public License 3.0/license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

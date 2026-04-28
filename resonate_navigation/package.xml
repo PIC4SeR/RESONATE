@@ -4,6 +4,7 @@
   <name>resonate_navigation</name>
   <version>0.0.0</version>
   <description>Package with the launch files required to handle navigation, along with the necessary params files </description>
+  <maintainer email="anonymous@example.com">Anonymous</maintainer>
   <license>GPL</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
