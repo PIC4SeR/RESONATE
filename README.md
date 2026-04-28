@@ -73,3 +73,13 @@ If you want to use this code for your research, please cite our work ([Paper Nam
 <p align="left">
   <img src="https://media.giphy.com/media/yWh7b6fWA5rJm/giphy.gif?cid=790b7611ieiiqtp06t9x5bju00gzcgryrw8me999ep27ovcj&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="animated" />
 </p>
+
+## Necessary repositories
+
+people: https://github.com/wg-perception/people.git (ros2 branch)
+RVO2 (for the orca, it should automatically install given the  fetch command): https://github.com/snape/RVO2.git
+LightSFM: https://github.com/robotics-upo/lightsfm.
+
+
+
+

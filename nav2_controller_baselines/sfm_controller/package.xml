@@ -3,9 +3,8 @@
 <package format="3">
   <name>sfm_controller</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="andrea.ostuni@polito.it">Andrea Ostuni</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Pure SFM controller leveraging the RVO2 package</description>
+  <license>GNU General Public License 3.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

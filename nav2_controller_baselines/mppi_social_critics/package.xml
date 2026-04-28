@@ -3,9 +3,8 @@
 <package format="3">
   <name>mppi_social_critics</name>
   <version>0.0.0</version>
-  <description>MPPI critics for social behavior</description>
-  <maintainer email="andrea.ostuni@polito.it">andrea</maintainer>
-  <license>Apache-2.0</license>
+  <description>MPPI critic for social behavior</description>
+  <license>GNU General Public License 3.0/license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
