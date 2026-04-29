@@ -83,12 +83,18 @@ Core dependencies:
 - LightSFM headers and libraries, required by the SFM controller and social critics
 
 The ORCA controller fetches RVO2 at build time through CMake `FetchContent`.
+The DWA implementation is provided as an adapted version of the original ROS2 Foxy implementation, with the necessary changes to make it compatible with ROS2 Humble
+The Gaussian Social Costmap is also a slightly modified version of the original
+version provided.
+
 
 External source repositories used by the current codebase:
 
 - `people_msgs`: https://github.com/wg-perception/people.git, ROS 2 branch
 - RVO2: https://github.com/snape/RVO2.git, fetched automatically by the ORCA controller build
 - LightSFM: https://github.com/robotics-upo/lightsfm
+- Original DWA implementation (for reference): https://github.com/robotics-upo/social_force_window_planner.git
+- Original Gaussian Social Costmap Plugin (for reference): https://github.com/robotics-upo/nav2_social_costmap_plugin.git
 
 ## Installation
 
