@@ -74,7 +74,7 @@ Core dependencies:
 
 - ROS 2 Humble
 - Nav2
-- Clearpath Jackal ROS 2 packages, when running on the physical robot
+- Clearpath Jackal ROS 2 packages
 - VICON/mocap packages used by the launch files:
   - `mocap4r2_vicon_driver`
   - `mocap4r2_robot_localization`
@@ -86,7 +86,8 @@ Core dependencies:
 - LightSFM headers and libraries, required by the SFM controller and social critics
 
 The ORCA controller fetches RVO2 at build time through CMake `FetchContent`.
-The DWA implementation is provided as an adapted version of the original ROS2 Foxy implementation, with the necessary changes to make it compatible with ROS2 Humble
+The DWA implementation is provided as an adapted version of the original ROS2 Foxy implementation, with the necessary changes to make it compatible with ROS2 Humble.
+
 The Gaussian Social Costmap is also a slightly modified version of the original
 version provided.
 
