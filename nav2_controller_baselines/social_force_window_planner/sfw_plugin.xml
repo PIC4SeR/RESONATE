@@ -1,0 +1,9 @@
+<class_libraries>
+    <library path="social_force_window_planner">
+        <class type="social_force_window_planner::SFWPlannerNode" base_class_type="nav2_core::Controller">
+            <description>
+                social_force_window_planner
+            </description>
+        </class>
+    </library>
+</class_libraries>
