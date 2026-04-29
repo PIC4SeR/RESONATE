@@ -1,1 +1,8 @@
-
+ament_index_python==1.4.1
+builtin_interfaces==1.2.2
+geometry_msgs==4.9.1
+launch_ros==0.19.13
+nav2_common==1.1.20
+nav2_msgs==1.1.20
+PyYAML==6.0.3
+rclpy==3.3.20
