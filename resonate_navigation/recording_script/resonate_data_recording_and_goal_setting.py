@@ -130,7 +130,7 @@ class NavigationGoalPublisher(Node):
     def start_recording(self):
         #self.bag_name = f"metric_drop/{self.case}/{self.algo}/scenario_{self.scenario}"
         cmd = ['ros2', 'bag', 'record', '-o', self.bag_name, 'vicon/odom', 'vicon/people', 'odom','odometry/filtered',
-               'jackal_velocity_controller/cmd_vel_unstamped', '/objective','scan','tf','tf_static']
+               'cmd_vel_unstamped', '/objective','scan','tf','tf_static']
         if self.algo == 'adascore':
             cmd.append('cost_weights')
         self.bag_process = subprocess.Popen(cmd)

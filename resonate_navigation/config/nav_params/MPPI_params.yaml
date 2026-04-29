@@ -327,7 +327,7 @@ velocity_smoother:
     min_velocity: [-1.0, 0.0, -1.0]
     max_accel: [10.0, 0.0, 10.0]
     max_decel: [-10.0, 0.0, -10.0]
-    odom_topic: "jackal/odom"
+    odom_topic: "odom"
     odom_duration: 0.1
     deadband_velocity: [0.0, 0.0, 0.0]
     velocity_timeout: 1.0

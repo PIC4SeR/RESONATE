@@ -1,3 +1,5 @@
+[![ROS 2 Humble](https://img.shields.io/badge/ROS%202-Humble-blue.svg)](https://docs.ros.org/en/humble/)
+[![Nav2 Controller](https://img.shields.io/badge/Nav2-Controller-orange.svg)](https://navigation.ros.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 # RESONATE
 
@@ -91,8 +93,7 @@ version provided.
 
 External source repositories used by the current codebase:
 
-[![ROS 2 Humble](https://img.shields.io/badge/ROS%202-Humble-blue.svg)](https://docs.ros.org/en/humble/)
-[![Nav2 Controller](https://img.shields.io/badge/Nav2-Controller-orange.svg)](https://navigation.ros.org/)
+
 - `people_msgs`: https://github.com/wg-perception/people.git, ROS 2 branch
 - RVO2: https://github.com/snape/RVO2.git, fetched automatically by the ORCA controller build
 - LightSFM: https://github.com/robotics-upo/lightsfm
