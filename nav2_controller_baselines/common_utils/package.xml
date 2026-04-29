@@ -3,6 +3,8 @@
 <package format="3">
   <name>common_utils</name>
   <version>0.0.0</version>
+  <description>Common utilities for Nav2 controllers and critics</description>
+  <maintainer email="anonymous@example.com">Anonymous</maintainer>
   <license>GNU General Public License 3.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

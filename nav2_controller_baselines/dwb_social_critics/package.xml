@@ -3,6 +3,8 @@
 <package format="3">
   <name>dwb_social_critics</name>
   <version>0.0.0</version>
+  <description>Additional critics for the DWB local planner</description>
+  <maintainer email="anonymous@example.com">Anonymous</maintainer>
   <license>GNU General Public License 3.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
