@@ -1,4 +1,4 @@
-#include "dwb_additional_critics/social_force.hpp"
+#include "dwb_social_critics/social_force.hpp"
 
 #include <math.h>
 

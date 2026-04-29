@@ -16,8 +16,7 @@ from nav2_common.launch import RewrittenYaml
 
 def generate_launch_description():
     # Get the launch directory
-    bringup_dir = get_package_share_directory('nav2_bringup')
-    applr_dir = get_package_share_directory('nav2_social_experiments')
+    pkg_dir = get_package_share_directory('resonate_navigation')
 
     namespace = LaunchConfiguration('namespace')
     map_yaml_file = LaunchConfiguration('map')
@@ -73,7 +72,7 @@ def generate_launch_description():
         description='Top-level namespace')
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
-        'map', default_value= os.path.join(applr_dir, 'maps', 'test_v6.yaml'),
+        'map', default_value= os.path.join(pkg_dir, 'maps', 'test_v6.yaml'),
         description='Full path to map yaml file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -83,7 +82,7 @@ def generate_launch_description():
 
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value=os.path.join(applr_dir, 'params', 'nav2_DWA_social_costmap_params.yaml'),
+        default_value=os.path.join(pkg_dir, 'params', 'nav2_DWA_social_costmap_params.yaml'),
         description='Full path to the ROS2 parameters file to use for all launched nodes')
 
     declare_autostart_cmd = DeclareLaunchArgument(
