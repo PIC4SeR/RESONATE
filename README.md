@@ -27,10 +27,11 @@ RESONATE/
 |   +-- LICENSE                  # GPL-3.0 license for the navigation package
 +-- nav2_controller_baselines/
     +-- common_utils/            # Shared controller utilities
-    +-- dwb_social_critics/  # DWB social-force critic
+    +-- social_force_window_planner/  # DWA with the social  ritic
     +-- mppi_social_critics/     # MPPI social critic
     +-- orca_controller/         # ORCA Nav2 controller plugin
     +-- sfm_controller/          # Social Force Model Nav2 controller plugin
+    +-- nav2_social_costmap_plugin/ # Gausian Costmap plugin
 ```
 
 ## Benchmark Summary
