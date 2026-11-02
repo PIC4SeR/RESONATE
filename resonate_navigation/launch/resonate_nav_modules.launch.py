@@ -72,7 +72,7 @@ def generate_launch_description():
         description='Top-level namespace')
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
-        'map', default_value= os.path.join(pkg_dir, 'maps', 'test_v6.yaml'),
+        'map', default_value= os.path.join(pkg_dir, 'maps', 'corridor.yaml'),
         description='Full path to map yaml file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(

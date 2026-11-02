@@ -7,8 +7,8 @@ bt_navigator:
     bt_loop_duration: 10
     default_server_timeout: 20
     # 'default_nav_through_poses_bt_xml' and 'default_nav_to_pose_bt_xml' are use defaults:
-    default_nav_through_poses_bt_xml: "$(find-pkg-share nav2_social_experiments)/behavior_trees/navigate_through_poses.xml"
-    default_nav_to_pose_bt_xml: "$(find-pkg-share nav2_social_experiments)/behavior_trees/navigate_to_pose.xml"
+    default_nav_through_poses_bt_xml: "$(find-pkg-share resonate_navigation)/behavior_trees/navigate_through_poses.xml"
+    default_nav_to_pose_bt_xml: "$(find-pkg-share resonate_navigation)/behavior_trees/navigate_to_pose.xml"
     # goal_blackboard_id: goal
     # goals_blackboard_id: goals
     # path_blackboard_id: path
@@ -278,7 +278,7 @@ map_server:
     use_sim_time: True
     # Overridden in launch by the "map" launch configuration or provided default value.
     # To use in yaml, remove the default "map" value in the tb3_simulation_launch.py file & provide full path to map below.
-    yaml_filename: "$(find-pkg-share nav2_social_experiments)/maps/test_v7.yaml"
+    yaml_filename: "$(find-pkg-share resonate_navigation)/maps/open.yaml"
     topic_name: "map"
     frame_id: "map"
 

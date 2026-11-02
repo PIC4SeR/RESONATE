@@ -7,7 +7,7 @@ passing:
         child_frame_id: "base_link"
         frame_id: "map"
 
-  map_file: maps/test_v1_v2.yaml
+  map_file: maps/corridor.yaml
 
   robot_dynamics:
     period_for_diff: 5
@@ -28,7 +28,7 @@ overtaking:
         child_frame_id: "base_link"
         frame_id: "map"
 
-  map_file: maps/test_v1_v2.yaml
+  map_file: maps/corridor.yaml
 
   robot_dynamics:
     period_for_diff: 5
@@ -49,7 +49,7 @@ crossing1:
         child_frame_id: "base_link"
         frame_id: "map"
 
-  map_file: maps/test_v3_v4.yaml
+  map_file: maps/crossing.yaml
 
   robot_dynamics:
     period_for_diff: 5
@@ -70,7 +70,7 @@ crossing2:
         child_frame_id: "base_link"
         frame_id: "map"
 
-  map_file: maps/test_v3_v4.yaml
+  map_file: maps/crossing.yaml
 
   robot_dynamics:
     period_for_diff: 5
@@ -91,7 +91,7 @@ narrow_turn:
         child_frame_id: "base_link"
         frame_id: "map"
 
-  map_file: maps/test_v5.yaml
+  map_file: maps/narrow_turn.yaml
 
   robot_dynamics:
     period_for_diff: 5
@@ -112,7 +112,7 @@ mixed:
         child_frame_id: "base_link"
         frame_id: "map"
 
-  map_file: maps/test_v6.yaml
+  map_file: maps/mixed.yaml
 
   robot_dynamics:
     period_for_diff: 5
@@ -134,7 +134,7 @@ crossing3:
         child_frame_id: "base_link"
         frame_id: "map"
 
-  map_file: maps/test_v7_v8.yaml
+  map_file: maps/open.yaml
 
   robot_dynamics:
     period_for_diff: 5
@@ -156,7 +156,7 @@ curious_person:
         child_frame_id: "base_link"
         frame_id: "map"
 
-  map_file: maps/test_v7_v8.yaml
+  map_file: maps/open.yaml
 
   robot_dynamics:
     period_for_diff: 5

@@ -80,29 +80,13 @@ Core dependencies:
   - `mocap4r2_vicon_driver`
   - `mocap4r2_robot_localization`
   - `mocap4r2_people`
-- `people_msgs`
-- `twist_stamper`
-- `xtensor` and `xsimd`, required by the MPPI social critic
-- OpenCV development libraries, required by `common_utils`
-- LightSFM headers and libraries, required by the SFM controller and social critics
-
-The ORCA controller fetches RVO2 at build time through CMake `FetchContent`.
-The DWA implementation is provided as an adapted version of the original ROS2 Foxy implementation, with the necessary changes to make it compatible with ROS2 Humble.
-
-The Gaussian Social Costmap is also a slightly modified version of the original
-version provided.
-
-
-External source repositories used by the current codebase:
-
-
 - `people_msgs`: https://github.com/wg-perception/people.git, ROS 2 branch
-- RVO2: https://github.com/snape/RVO2.git, fetched automatically by the ORCA controller build
-- LightSFM: https://github.com/robotics-upo/lightsfm
-- Original DWA implementation (for reference): https://github.com/robotics-upo/social_force_window_planner.git
-- Original Gaussian Social Costmap Plugin (for reference): https://github.com/robotics-upo/nav2_social_costmap_plugin.git
+- `twist_stamper`
+- The controller baselines and their dependencies (LightSFM, `xtensor`/`xsimd`, OpenCV); see the [nav2_controller_baselines README](nav2_controller_baselines/README.md)
 
 ## Installation
+
+Install the controller baseline dependencies first, as described in the [nav2_controller_baselines installation section](nav2_controller_baselines/README.md#installation). The repository itself does not need to be cloned separately: it is included here as a submodule.
 
 Create a ROS 2 workspace and clone this repository, including its submodules, into `src`:
 
@@ -144,7 +128,7 @@ Start Nav2 with a selected map and controller parameter file:
 ros2 launch resonate_navigation resonate_start_nav_stack.launch.py \
   namespace:=jackal \
   use_namespace:=true \
-  map:=test_v1_v2.yaml \
+  map:=corridor.yaml \
   params_file:=DWA_params.yaml
 ```
 
@@ -236,4 +220,4 @@ To add a new controller:
 
 ## License
 
-The `resonate_navigation` package includes a GPL-3.0 license file and declares `GPL` in its package manifest.
+The `resonate_navigation` package is released under the GPL-3.0 license.
