@@ -1,9 +1,0 @@
-<class_libraries>
-  <library path="mppi_social_critics">
-
-    <class type="mppi::critics::SocialCritic" base_class_type="mppi::critics::CriticFunction">
-      <description>mppi critic for considering social forces</description>
-    </class>
-
-  </library>
-</class_libraries>

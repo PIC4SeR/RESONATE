@@ -1,0 +1,3 @@
+[submodule "nav2_controller_baselines"]
+	path = nav2_controller_baselines
+	url = https://github.com/PIC4SeR/nav2_controller_baselines.git
