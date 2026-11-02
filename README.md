@@ -27,13 +27,14 @@ RESONATE/
 |   +-- recording_script/        # Goal dispatch and ROS 2 bag recording script
 |   +-- rviz/                    # RViz configuration
 |   +-- LICENSE                  # GPL-3.0 license for the navigation package
-+-- nav2_controller_baselines/
++-- nav2_controller_baselines/  # Git submodule (PIC4SeR/nav2_controller_baselines)
     +-- common_utils/            # Shared controller utilities
-    +-- social_force_window_planner/  # DWA with the social  ritic
+    +-- social_force_window_planner/  # DWA with the social critic
+    +-- dwb_additional_critics/  # Additional DWB critics
     +-- mppi_social_critics/     # MPPI social critic
     +-- orca_controller/         # ORCA Nav2 controller plugin
     +-- sfm_controller/          # Social Force Model Nav2 controller plugin
-    +-- nav2_social_costmap_plugin/ # Gausian Costmap plugin
+    +-- nav2_social_costmap_plugin/ # Gaussian Costmap plugin
 ```
 
 ## Benchmark Summary
@@ -103,16 +104,22 @@ External source repositories used by the current codebase:
 
 ## Installation
 
-Create a ROS 2 workspace and clone this repository into `src`:
+Create a ROS 2 workspace and clone this repository, including its submodules, into `src`:
 
 ```bash
 mkdir -p ~/resonate_ws/src
 cd ~/resonate_ws/src
-git clone https://github.com/PIC4SeR/RESONATE.git
+git clone --recursive https://github.com/PIC4SeR/RESONATE.git
 cd ~/resonate_ws
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
 source install/setup.bash
+```
+
+If you already cloned without `--recursive`, fetch the submodule with:
+
+```bash
+git submodule update --init --recursive
 ```
 
 If you are building in an existing workspace, source your ROS 2 installation first:
